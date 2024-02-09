@@ -103,10 +103,11 @@ footer .top{
     border-bottom: 1px solid var(--color-contrast);
 }
 
-/* h3 */
-h3{
-    font-size: 30px;
+.bg-star{
     background-image: url(../img/stars.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    font-size: 1.7em;
 }
 
 #hero{
@@ -123,12 +124,33 @@ h3{
 .debug{
     border: 1px solid black;
 }
-
+h2.feature{
+    font-size: 38px;
+}
+p.feature{
+    padding-top: 20px;
+    font-size: 17px;
+}
+h2.channel{
+    font-size: 38px;
+}
+p.channel{
+    padding-top: 20px;
+    font-size: 17px;
+}
+h2.community{
+    font-size: 38px;
+}
+p.community{
+    font-size: 17px;
+    padding-top: 20px;
+}
 h2.tech{
     font-size: 30px;
 }
 p.tech{
-    font-size: 15px;
+    font-size: 17px;
+    padding-top: 20px;
 }
 .tech{
     text-align: center;
@@ -137,7 +159,7 @@ p.tech{
 .img-tech{
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: flex;
 }
 
 #dowload::before{
