@@ -1,0 +1,132 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--color-secondary: #ffffff;
+	--color-primary: #23272a;
+	--color-header-bg: #255ee9;
+	--color-section-bg: #f6f6f6;
+	--color-contrast: #7289da;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    margin: 10px;
+}
+.a-nav{
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 300;
+}
+#log-in{
+    text-decoration: none;
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 7px 16px;
+    border-radius: 20px;
+}
+/* utility flex */
+.d-flex{
+    display: flex;
+}
+.d-reverse{
+    flex-direction: row-reverse;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+    align-content: center;
+}
+.left{
+    width: 60%;
+}
+.left img{
+    width: 100%;
+}
+.right{
+    width: 40%;
+    padding-top: 3%;
+}
+/* utility */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.small-container{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* general */
+/* header */
+header{
+    background-color: var(--color-header-bg);
+    color: var(--color-secondary);
+}
+/* body */
+body{
+    font-family: "Noto Sans", sans-serif;
+    background-color: var(--color-secondary);
+    color: var(--color-primary)
+}
+/* footer */
+footer {
+    background-color: var(--color-primary);
+    color: white;
+}
+footer .top{
+    border-bottom: 1px solid var(--color-contrast);
+}
+#hero{
+    background-image: url(../img/jumbo.png);
+    min-height: 500px;
+    background-size: cover;
+    padding-top: 150px;
+}
+.section-bg{
+    background-color: var(--color-section-bg);
+}
+
+.debug{
+    border: 1px solid black;
+}
+
+#dowload::before{
+    content: '\2193';
+}
+
+#dowload{
+    border: 1px solid var(--color-contrast);
+    background-color: var(--color-contrast);
+    text-decoration: none;
+    color: var(--color-secondary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    line-height: 100px;
+}
+
+.nav-footer{
+    text-decoration: none;
+}
+
+/* color */
+.color-contrast{
+    color: var(--color-contrast);
+}
+
+.nav-footer{
+    color: var(--color-secondary);
+    text-decoration: none;
+}
