@@ -10,7 +10,9 @@
 	--color-primary: #23272a;
 	--color-header-bg: #255ee9;
 	--color-section-bg: #f6f6f6;
-	--color-contrast: #7289da;
+	--color-contrast: #5865f2;
+    --color-hover: #7289da;
+    --dark-button-hover: #23272a;
 }
 
 ul{
@@ -69,32 +71,47 @@ li{
     text-align: center;
 }
 
+.bold-text{
+    font-weight: 600;
+}
+
 /* general */
 /* header */
 header{
     background-color: var(--color-header-bg);
     color: var(--color-secondary);
 }
+
 /* body */
 body{
     font-family: "Noto Sans", sans-serif;
     background-color: var(--color-secondary);
     color: var(--color-primary)
 }
+
 /* footer */
 footer {
     background-color: var(--color-primary);
     color: white;
 }
+
 footer .top{
     border-bottom: 1px solid var(--color-contrast);
 }
+
+/* h3 */
+h3{
+    font-size: 30px;
+    background-image: url(../img/stars.svg);
+}
+
 #hero{
     background-image: url(../img/jumbo.png);
     min-height: 500px;
     background-size: cover;
     padding-top: 150px;
 }
+
 .section-bg{
     background-color: var(--color-section-bg);
 }
@@ -105,6 +122,7 @@ footer .top{
 
 #dowload::before{
     content: '\2193';
+    font-size: 20px;
 }
 
 #dowload{
@@ -112,9 +130,14 @@ footer .top{
     background-color: var(--color-contrast);
     text-decoration: none;
     color: var(--color-secondary);
-    padding: 6px 12px;
-    border-radius: 20px;
+    padding: 7px 18px;
+    border-radius: 27px;
     line-height: 100px;
+}
+
+#dowload:hover{
+    background-color: var(--color-hover);
+    box-shadow: 2px 2px 4px var(--dark-button-hover);
 }
 
 .nav-footer{
@@ -126,7 +149,50 @@ footer .top{
     color: var(--color-contrast);
 }
 
+.color-secondary{
+    color: var(--color-secondary);
+}
+
 .nav-footer{
     color: var(--color-secondary);
     text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.nav-footer:hover{
+    text-decoration: underline;
+    color: var(--color-secondary);
+}
+
+.ft-title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#btn-sign-in{
+    border: 1px solid var(--color-contrast);
+    background-color: var(--color-contrast);
+    text-decoration: none;
+    color: var(--color-secondary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+#btn-sign-in:hover{
+    background-color: var(--color-hover);
+}
+
+.margin-fix{
+    margin: auto -10px;
+}
+
+.language{
+    font-size: 15px;
+}
+
+#flag{
+    width: 10%;
+    margin-top: 10px;
 }
