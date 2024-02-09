@@ -26,6 +26,10 @@ li{
     text-decoration: none;
     font-weight: 300;
 }
+.a-nav:hover{
+    text-decoration: underline;
+    color: var(--color-secondary);
+}
 #log-in{
     text-decoration: none;
     border: 1px solid var(--color-secondary);
@@ -33,6 +37,10 @@ li{
     color: var(--color-primary);
     padding: 7px 16px;
     border-radius: 20px;
+}
+#log-in:hover{
+    color: var(--color-header-bg);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 /* utility flex */
 .d-flex{
@@ -103,27 +111,62 @@ footer .top{
     border-bottom: 1px solid var(--color-contrast);
 }
 
+.dowload-1::before{
+    content: '\2193';
+    font-size: 20px;
+}
+
+.dowload-1{
+    border: 1px;
+    background-color: var(--color-secondary);
+    text-decoration: none;
+    color: var(--color-primary);
+    padding: 9px 25px;
+    border-radius: 23px;
+    line-height: 100px;
+}
+
+.dowload-1:hover{
+    color: var(--color-contrast);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.open{
+    border: 1px;
+    background-color: var(--color-primary);
+    text-decoration: none;
+    color: var(--color-secondary);
+    padding: 9px 25px;
+    border-radius: 23px;
+    line-height: 100px;
+}
+
+.open:hover{
+    background-color: var(--dark-button-hover);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .bg-star{
     background-image: url(../img/stars.svg);
-    background-position: bottom;
     background-repeat: no-repeat;
-    font-size: 1.7em;
+    font-size: 1.6em;
+    width: 100%;
+    background-position: 100px;
+    padding-top: 50px;
+    background-position: center;
 }
 
 #hero{
     background-image: url(../img/jumbo.png);
     min-height: 500px;
     background-size: cover;
-    padding-top: 150px;
+    align-items: center;
 }
 
 .section-bg{
     background-color: var(--color-section-bg);
 }
 
-.debug{
-    border: 1px solid black;
-}
 h2.feature{
     font-size: 38px;
 }
@@ -168,7 +211,7 @@ p.tech{
 }
 
 #dowload{
-    border: 1px solid var(--color-contrast);
+    border: 1px  var(--color-contrast);
     background-color: var(--color-contrast);
     text-decoration: none;
     color: var(--color-secondary);
@@ -179,7 +222,7 @@ p.tech{
 
 #dowload:hover{
     background-color: var(--color-hover);
-    box-shadow: 2px 2px 4px var(--dark-button-hover);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .nav-footer{
@@ -213,7 +256,7 @@ p.tech{
 }
 
 #btn-sign-in{
-    border: 1px solid var(--color-contrast);
+    border: 1px var(--color-contrast);
     background-color: var(--color-contrast);
     text-decoration: none;
     color: var(--color-secondary);
@@ -224,6 +267,7 @@ p.tech{
 
 #btn-sign-in:hover{
     background-color: var(--color-hover);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .margin-fix{
