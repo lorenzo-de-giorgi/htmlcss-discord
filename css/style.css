@@ -75,6 +75,10 @@ li{
     font-weight: 600;
 }
 
+.padding-top{
+    padding-top: 50px;
+}
+
 /* general */
 /* header */
 header{
@@ -118,6 +122,22 @@ h3{
 
 .debug{
     border: 1px solid black;
+}
+
+h2.tech{
+    font-size: 30px;
+}
+p.tech{
+    font-size: 15px;
+}
+.tech{
+    text-align: center;
+}
+
+.img-tech{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #dowload::before{
