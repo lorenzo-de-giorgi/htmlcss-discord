@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+nav{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+}
+
+.fixed{
+    background-color: var(--color-header-bg);
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+}
+
 :root {
 	--color-secondary: #ffffff;
 	--color-primary: #23272a;
@@ -290,4 +304,23 @@ p.tech{
 #flag{
     width: 10%;
     margin-top: 10px;
+}
+
+.dp-menu{
+    background-color: var(--color-secondary);
+    color: black;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1001;
+    display: none;
+}
+
+nav>ul li{
+    position: relative;
+}
+
+nav>ul li:hover .dp-menu{
+    display: block;
 }

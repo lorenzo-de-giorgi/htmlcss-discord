@@ -14,17 +14,26 @@
     <!-- header -->
     <header>
         <!-- navigation bar -->
-        <nav class="container d-flex space-between align-items-center">
-            <img src="img/logo.svg" alt="Logo Discord">
-            <ul class="d-flex">
-                <li><a class="a-nav" href="download.html">Scarica</a></li>
-                <li><a class="a-nav" href="#">Perchè Discord</a></li>
-                <li><a class="a-nav" href="#">Nitro</a></li>
-                <li><a class="a-nav" href="#">Sicurezza</a></li>
-                <li><a class="a-nav" href="#">Assistenza</a></li>
-            </ul>
-            <a id="log-in" href="#">Accedi</a>
-        </nav>
+        <div class="fixed">
+            <nav class=" nav  d-flex space-between align-items-center">
+                <img src="img/logo.svg" alt="Logo Discord">
+                <ul class="d-flex">
+                    <li><a class="a-nav" href="download.html">Scarica</a>
+                        <ul class="dp-menu">
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
+                    </li>
+                    <li><a class="a-nav" href="#">Perchè Discord</a></li>
+                    <li><a class="a-nav" href="#">Nitro</a></li>
+                    <li><a class="a-nav" href="#">Sicurezza</a></li>
+                    <li><a class="a-nav" href="#">Assistenza</a></li>
+                </ul>
+                <a id="log-in" href="#">Accedi</a>
+            </nav>
+        </div>
+
         <!-- hero -->
         <div id="hero" class="d-flex">
             <div class="small-container">
